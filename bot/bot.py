@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @WhiteDevilOp999
+# (c) @S08112K06
 
 from pyrogram import Client, __version__
 
@@ -31,7 +31,7 @@ class Bot(Client):
         bot_details = await self.get_me()
         self.set_parse_mode("html")
         self.LOGGER(__name__).info(
-            f"@{bot_details.username}  started! Success, Developer - WhiteDevil 😇 "
+            f"@{bot_details.username}  started! Success "
         )
         self.USER, self.USER_ID = await User().start()
 
